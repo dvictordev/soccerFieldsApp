@@ -12,6 +12,8 @@ import headBackground from "../../assets/headBackground.png";
 import logo from "../../assets/logo.png";
 
 import { styles } from "./styles";
+import { Input } from "../../components/Input";
+import { HeaderDef } from "../../components/HeaderDef";
 
 interface loginProps {
   email: string;
@@ -30,22 +32,20 @@ export function Login() {
     <View style={styles.container}>
       <StatusBar style="light" />
       <View style={styles.headBack}>
-        <ImageBackground source={headBackground} style={styles.headImg}>
-          <Image source={logo} />
-        </ImageBackground>
+        <HeaderDef />
 
         <View style={styles.body}>
-          <Text style={styles.label}>Login</Text>
-          <TextInput
+          <Input
             style={styles.inputform}
             onChangeText={(e) => setEmail(e)}
+            label="Usuario"
           />
 
-          <Text style={styles.label}>Senha</Text>
-          <TextInput
+          <Input
             onChangeText={(e) => setPassword(e)}
             style={styles.inputform}
             secureTextEntry
+            label="Senha"
           />
 
           <TouchableOpacity activeOpacity={0.6} style={styles.logBtn}>

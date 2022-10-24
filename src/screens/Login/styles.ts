@@ -9,16 +9,9 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  headImg: {
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: -20,
-    width: 420,
-    height: 416,
-  },
   body: {
     paddingHorizontal: 17,
-    paddingTop: 20,
+    paddingTop: 50,
   },
   label: {
     color: THEME.colors.PRIMARY,
