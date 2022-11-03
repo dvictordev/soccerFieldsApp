@@ -4,7 +4,7 @@ import { THEME } from '../../theme/theme';
 export const styles = StyleSheet.create({
   input: {
     height: 57,
-    width: 380,
+    width:'100%',
     marginVertical: 18,
     paddingHorizontal: 12,
     borderRadius: 8,
